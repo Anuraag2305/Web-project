@@ -1,0 +1,77 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: #0f2027;  /* fallback */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+/* Animated Text */
+.animated-text {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Paragraph */
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ddd;
+  animation: fadeInUp 2.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00c6ff;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 3s ease-out forwards;
+  opacity: 0;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.3);
+}
